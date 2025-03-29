@@ -1,0 +1,94 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background-color: white;
+    height: 100vh;
+}
+
+header {
+    display: flex;
+
+    justify-content: end;
+    height: 60px;
+    padding: 0 12px;
+}
+header .options{
+    font-family: Arial, sans-serif;
+    text-decoration: none;
+    color: black;
+}
+
+header .options a svg {
+    height: 24px;
+    width: 24px;
+}
+
+header .options a img {
+    border-radius: 50%;
+    height: 32px;
+    width: 32px;
+}
+
+main {
+    height: calc(100% - 60px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+main .container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 32px;
+}
+
+main.container figure{
+    max-height: 92px;
+}
+
+main .container figure img {
+    height: 100%;
+}
+
+main .container .searcher {
+    display: flex;
+    align-items: center;
+    height: 40px;
+    width: 450px;
+    padding: 8px;
+}
+
+main .container .searcher input{
+    width: 100%;
+}
+
+main .container .searcher-buttons {
+    display: flex;
+    gap: 10px;
+}
+
+main .container .searcher-buttons button {
+    border: none;
+    border-radius: 6px;
+    background-color: #f8f9fa;
+    padding: 12px;
+    color: #3c4043;
+}
+
+main .container p {
+    font-size: small;
+}
+
+.searcher-logo{
+    display: inline-block;
+    height: 32px;
+    width: 32px;
+    background-image: url(assets/search-logo.svg);
+    
+}
